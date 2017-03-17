@@ -26,8 +26,10 @@
     "babel-preset-stage-0": "^6.3.13"
   },
   "dependencies": {
+    "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "react": "^15.4.2",
+    "react-bootstrap": "^0.30.8",
     "react-dom": "^15.4.2",
     "react-router": "^2.0.0"
   }
