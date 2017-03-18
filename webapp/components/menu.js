@@ -16,6 +16,7 @@ export default class Menu extends React.Component {
                 <Navbar.Collapse>
                     <Nav>
                         <NavItem eventKey={1} active={true} href="/#">Home</NavItem>
+                        <Link to="/about">About</Link>
                         <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
                             <MenuItem eventKey={3.1}>Action</MenuItem>
                         </NavDropdown>
@@ -24,7 +25,7 @@ export default class Menu extends React.Component {
                         <NavItem eventKey={1} href="#">Link Right</NavItem>
                     </Nav>
                 </Navbar.Collapse>
-            </Navbar>
+            </Navbar>            
         );        
     }
 }

@@ -7,9 +7,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 ///Controllers
-
-///Entry point
-app.get('/', (req, res)=> res.redirect('/static/index.html'));
-
+app.get('/app', (req, res, next) =>{
+    console.log('passed here...');
+    next();
+});
 ///Static resources
-app.use('/static', express.static(__dirname + '/webapp/dist/'));
+app.use('/', express.static(__dirname + '/webapp/dist/'));
